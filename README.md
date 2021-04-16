@@ -51,14 +51,14 @@ _1) Una vez esta el codigo listo se debe ejecutar las siguientes sentencias en e
 ```
 ls -l /dev | grep ACM # se revisa que hay conectado a los puertos
 
-sudo chmod 777 /dev/ttyACM0 # se le dan los permisos al puerto (El cero puede cambiar esta informacion la entrega la sentencia anterior
+sudo chmod 777 /dev/ttyACM0 # se le dan los permisos al puerto (El cero puede cambiar esta informacion la entrega la sentencia anterior)
 ```
 
 _2) Se carga el codigo en el arduino y posteriormente se ejecuta las siguientes sentencias de ROS_
 ```
 roscore # nucleo de ROS se debe correr en un terminal
 
-rosrun rosserial_python serial_node.py /dev/ttyACM0 # En un segundo terminal se corre esta sentencia (Nota: Para que esto sirva se debe instalar la libreria rosserial
+rosrun rosserial_python serial_node.py /dev/ttyACM0 # En un segundo terminal se corre esta sentencia (Nota: Para que esto sirva se debe instalar la libreria rosserial)
 ```
 
 ## Autores
