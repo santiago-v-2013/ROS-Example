@@ -4,7 +4,9 @@
 
 _En este proyecto de ejemplo se realiza la conexion de 11 nodos de manera que se envien diferentes tipos de datos entre ellos y posteriormente se genere envio y recepcion de datos desde un Arduino Mega 2560_
 
-## Implementación Nodos en linux
+## Nodos en Linux
+
+### Implementación
 
 _1) Una vez se descargan los directorios se deben poner en la ruta /home/Carpeta Usuario/Catkin_Dir/src/Carpeta_nodo/_
 _2) Se debe dar permisos a todos los scrpts de Python chmod_ 
@@ -22,7 +24,7 @@ source ~/Catkin_dir/devel/setup.bash # Al final del archivo se pega la linea de 
 
 ```
 
-## Ejecucion
+### Ejecucion
 
 _1)Para ejecutar el codigo se debe en el terminal ejecutar de la suguiente manera_) )
 
