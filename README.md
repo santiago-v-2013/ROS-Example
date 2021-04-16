@@ -41,11 +41,29 @@ rosrun Carpeta_nodo Nombre_script.py
 _2) o se ejecuta el launch de la siguiente manera_
 
 ```
-roslaunch Carpeta_nodo Nombre_launch.launch
+r9slaunch Carpeta_nodo Nombre_launch.launch
 
 ```
 
 ## Implementacion Nodo Arduino
 
+_1) Una vez esta el codigo listo se debe ejecutar las siguientes sentencias en el terminal_
+```
+ls -l /dev | grep ACM # se revisa que hay conectado a los puertos
 
+sudo chmod 777 /dev/ttyACM0 # se le dan los permisos al puerto (El cero puede cambiar esta informacion la entrega la sentencia anterior
+```
+
+_2) Se carga el codigo en el arduino y posteriormente se ejecuta las siguientes sentencias de ROS_
+```
+roscore # nucleo de ROS se debe correr en un terminal
+
+rosrun rosserial_python serial_node.py /dev/ttyACM0 # En un segundo terminal se corre esta sentencia (Nota: Para que esto sirva se debe instalar la libreria rosserial
+```
+
+## Autores
+
+* Santiago Vasquez
+* Juan Andres Alzate
+* Andres Rodriguez
 
