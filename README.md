@@ -64,6 +64,3 @@ rosrun rosserial_python serial_node.py /dev/ttyACM0 # En un segundo terminal se 
 ## Autores
 
 * Santiago Vasquez
-* Juan Andres Alzate
-* Andres Rodriguez
-
