@@ -41,7 +41,7 @@ rosrun Carpeta_nodo Nombre_script.py
 _2) o se ejecuta el launch de la siguiente manera_
 
 ```
-r9slaunch Carpeta_nodo Nombre_launch.launch
+roslaunch Carpeta_nodo Nombre_launch.launch
 
 ```
 
