@@ -2,7 +2,12 @@
 
 ## Introduccion
 
-_En este proyecto de ejemplo se realiza la conexion de 11 nodos de manera que se envien diferentes tipos de datos entre ellos y posteriormente se genere envio y recepcion de datos desde un Arduino Mega 2560_
+
+_Este proyecto consiste en comunicar nodos de Ros con Arduino por comunicacion serial, Para este fin se hizo uso de un Arduino Mega 2560 y se implementa como un nodo de Ros para la comunicación Serial. Del arduino se envian 3 datos por tres topics diferentes y son recibidos por el nodo A, posteriormente se procesar la información utilizando funciones de pertenecia para finalmente decidir la velocidad del motor de acuerdo a los datos obtenidos.
+
+Para realiza esta tarea se hace la conexion de 11 nodos de manera que se envien diferentes tipos de datos entre ellos y posteriormente se genere envio y recepcion de datos desde un Arduino Mega 2560. Estos nodos se organizan como se observa en la siguiente imagen._
+
+![Organizacion de Nodos](https://github.com/santiago-v-2013/ROS-Publisher_and_suscriber/blob/main/Imagenes/Nodos.PNG)
 
 ## Nodos en Linux
 
