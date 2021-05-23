@@ -7,9 +7,15 @@ _Este proyecto consiste en comunicar nodos de Ros con Arduino por comunicacion s
 
 Para realiza esta tarea se hace la conexion de 11 nodos de manera que se envien diferentes tipos de datos entre ellos y posteriormente se genere envio y recepcion de datos desde un Arduino Mega 2560. Estos nodos se organizan como se observa en la siguiente imagen._
 
-![Organizacion de Nodos](https://github.com/santiago-v-2013/ROS-Publisher_and_suscriber/blob/main/Imagenes/Nodos.PNG)
+![Imagen 1: Organizacion de Nodos](https://github.com/santiago-v-2013/ROS-Publisher_and_suscriber/blob/main/Imagenes/Nodos.PNG)
 
 ## Nodos en Linux
+
+_A continuacion de dara una breve descripcion de los nodos.
+
+* Nodo A: Este nodo es un suscriptor-publicador que recibe los 3 tipos de datos provenientes del Arduino y se los envia posteriormente a los nodos B, C y D.
+* Nodos B, C y D: Estos nodos reciben la informacion del nodo A y mediante logica fuzzy haciendo uso de funciones de pertenencia (Imagen 2) evalua los valores para darles un un porcentaje entre bajo, medio y alto 
+![Imagen 2: Funciones de membresia](https://github.com/santiago-v-2013/ROS-Publisher_and_suscriber/blob/main/Imagenes/F_membresia.PNG)
 
 ### Implementación
 
