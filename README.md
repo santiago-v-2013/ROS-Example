@@ -14,8 +14,11 @@ Para realiza esta tarea se hace la conexion de 11 nodos de manera que se envien 
 _A continuacion de dara una breve descripcion de los nodos.
 
 * Nodo A: Este nodo es un suscriptor-publicador que recibe los 3 tipos de datos provenientes del Arduino y se los envia posteriormente a los nodos B, C y D.
-* Nodos B, C y D: Estos nodos reciben la informacion del nodo A y mediante logica fuzzy haciendo uso de funciones de pertenencia (Imagen 2) evalua los valores para darles un un porcentaje entre bajo, medio y alto 
+* Nodos B, C y D: Estos nodos reciben la informacion del nodo A y mediante logica fuzzy haciendo uso de funciones de pertenencia (Imagen 2) evalua los valores para darles un un porcentaje entre bajo, medio y alto.
 ![Imagen 2: Funciones de membresia](https://github.com/santiago-v-2013/ROS-Publisher_and_suscriber/blob/main/Imagenes/F_membresia.PNG)
+* Nodos E, F y G: Estos reciben el procentaje de bajo, medio y alto. Luego de evaluar los datos devuelven la letra B, M o A depenediendo de cual fue el mayor porcentaje y enviar esa letra al nodo H.
+* Nodo H: Este nodos a partir de la informacion recibida de los nodos E, F y G envia un valor PWM como accion de control al arduino.
+* Nodo Arduino: Este nodo recibe la accion de control y de acuerdo a esta varia la velocidad del motor, seguidamente mide el valor de los sensores y lo envia al nodo A.
 
 ### Implementación
 
